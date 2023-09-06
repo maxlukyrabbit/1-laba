@@ -5,36 +5,38 @@ class Program
 {
     static void Main(string[] args)
     {
-        Agropole a = new Agropole("Биба", 7);
-        WriteLine(a.GetInfo());
+        Flat f = new Flat(5, 8);
+        WriteLine(f.GetInfo());
+        f.GetPrice();
     }
 
 
 }
 
-
-
-class Agropole
+class Flat
 {
-    public string name  { get; }
-    public const double weight = 0.5;
-    public double square { get; set; }
+    public int Number { get; set; }
+    private static int Cost = 900;
+    public int Square { get; set; }
 
-
-    public Agropole()
+    public Flat()
     {
-        name = "Майский";
-        square = 60;
+        Number = 1;
+        Square = 60;
     }
 
-    public Agropole(string Name, double Square)
+    public Flat(int number, int square)
     {
-        name = Name;
-        square = Square;
+        Number = number;
+        Square = square;
     }
 
     public string GetInfo()
     {
-        return $"Название - {name}, нужный вес {weight * square}";
+        return $"Номер кв. {Number}, результат {Cost * Square}";
+    }
+    public void GetPrice()
+    {
+        WriteLine(Cost);
     }
 }

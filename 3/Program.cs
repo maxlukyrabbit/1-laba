@@ -1,53 +1,42 @@
 ﻿using System;
+using static System.Console;
 
 class Program
 {
     static void Main(string[] args)
     {
-        Table table = new Table();
-        table.DisplayInfo();
-        Console.WriteLine("Cost: " + table.GetCost());
+        Agropole a = new Agropole("Майский", 6000);
+        WriteLine(a.GetInfo());
     }
+
+
 }
 
-class Table
+
+
+
+class Agropole
 {
-    private string name;
-    private double area;
-    private const double additionalCost = 500000;
+    public string name { get;}
+    const double weight = 0.5;
+    private double square;
 
-    public Table()
+
+    public Agropole()
     {
-        name = "Table";
-        area = 210;
+        name = "Майский";
+        square = 60;
     }
 
-    public Table(string name, double area)
+    public Agropole(string Name, double Square)
     {
-        this.name = name;
-        this.area = area;
+        name = Name;
+        square = Square;
     }
 
-    public string Name
+    public string GetInfo()
     {
-        get { return name; }
-        set { name = value; }
+        return $"Название - {name}, нужный вес {weight * square} gram";
     }
 
-    public double Area
-    {
-        get { return area; }
-        set { area = value; }
-    }
-
-    public double GetCost()
-    {
-        return area * area / 3 + additionalCost;
-    }
-
-    public void DisplayInfo()
-    {
-        Console.WriteLine("Name: " + name);
-        Console.WriteLine("Area: " + area + " sq.cm");
-    }
 }

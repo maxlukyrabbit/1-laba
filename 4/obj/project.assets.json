@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/maksim/Documents/Учёба/development_of_software_modules/1-laba/2/development_of_software_modules.csproj",
-      "projectName": "development_of_software_modules",
-      "projectPath": "/Users/maksim/Documents/Учёба/development_of_software_modules/1-laba/2/development_of_software_modules.csproj",
+      "projectUniqueName": "/Users/maksim/Documents/Учёба/development_of_software_modules/1-laba/4/3.csproj",
+      "projectName": "3",
+      "projectPath": "/Users/maksim/Documents/Учёба/development_of_software_modules/1-laba/4/3.csproj",
       "packagesPath": "/Users/maksim/.nuget/packages/",
-      "outputPath": "/Users/maksim/Documents/Учёба/development_of_software_modules/1-laba/2/obj/",
+      "outputPath": "/Users/maksim/Documents/Учёба/development_of_software_modules/1-laba/4/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "/Users/maksim/.nuget/NuGet/NuGet.Config"
